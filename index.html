@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="skript.js"></script>
+    <title>Tic Tac Roe</title>
+</head>
+
+<body>
+    <main class="blur">
+
+        <nav id="navbar">
+            <h1 id="game-heading">
+                Tic Tac Toe Game
+            </h1>
+
+            <div class="nav-btns">
+                <button class="new-game-btn nav-new-game">New Game</button>
+                <button class="again-game-btn nav-new-game">Again Game</button>
+                
+            </div>
+
+        </nav>
+
+
+
+        <span class="game-heading horizontal">
+            <h1 class="game-mode-heading">2P Game</h1>
+        </span>
+        <div class="horizontal-game-box">
+           
+                <!-- Game body when 3players -->
+            <div class="game-board-4x4 hidden ">
+                <div class="spots _4x4spots _4x4spot-0 br bb"></div>
+                <div class="spots _4x4spots _4x4spot-1 br bb"></div>
+                <div class="spots _4x4spots _4x4spot-2 br bb"></div>
+                <div class="spots _4x4spots _4x4spot-3 bb"></div>
+                <div class="spots _4x4spots _4x4spot-4 br bb"></div>
+                <div class="spots _4x4spots _4x4spot-5 br bb"></div>
+                <div class="spots _4x4spots _4x4spot-6 br bb"></div>
+                <div class="spots _4x4spots _4x4spot-7 bb"></div>
+                <div class="spots _4x4spots _4x4spot-8 br bb"></div>
+                <div class="spots _4x4spots _4x4spot-9 br bb"></div>
+                <div class="spots _4x4spots _4x4spot-10 br bb"></div>
+                <div class="spots _4x4spots _4x4spot-11 bb"></div>
+                <div class="spots _4x4spots _4x4spot-12 br"></div>
+                <div class="spots _4x4spots _4x4spot-13 br"></div>
+                <div class="spots _4x4spots _4x4spot-14 br"></div>
+                <div class="spots _4x4spots _4x4spot-15 "></div>
+    
+            </div>
+             <!-- Game body when 2players -->
+
+            <div class="game-board-3x3  ">
+                <div class="spots _3x3spots _3x3spot-0 br bb"></div>
+                <div class="spots _3x3spots _3x3spot-1 br bb"></div>
+                <div class="spots _3x3spots _3x3spot-2 bb"></div>
+                <div class="spots _3x3spots _3x3spot-3 br bb"></div>
+                <div class="spots _3x3spots _3x3spot-4 br bb"></div>
+                <div class="spots _3x3spots _3x3spot-5 bb"></div>
+                <div class="spots _3x3spots _3x3spot-6 br "></div>
+                <div class="spots _3x3spots _3x3spot-7 br"></div>
+                <div class="spots _3x3spots _3x3spot-8 "></div>
+            </div>
+<!-- Player sccores in horizolntall -->
+            <div class=" hplayer hplayer1  horizontal active player-X">
+                <div class="hname playerX-name">
+                    Player 1
+                </div>
+                <div class="hscore">
+                    <div class="hscore-1">
+                        <span class="X-1 turn-X">X</span>
+                        <span class="X-2 turn-X">X</span>
+                        <span class="X-3 turn-X">X</span>
+                        <span class="X-4 turn-X">X</span>
+                    </div>
+                    <div class="hscore-2">
+                        <span class="X-5 _4x4 turn-X">X</span>
+                        <span class="X-6 _4x4 turn-X">X</span>
+                        <span class="X-7 _4x4 turn-X">X</span>
+                        <span class="X-8 _4x4 turn-X">X</span>
+                    </div>
+                </div>
+
+                
+                
+            </div>
+            <div class=" hplayer hplayer2  horizontal player-O">
+                <div class="hname playerO-name">
+                    Player 2
+                </div>
+                <div class="hscore">
+                    <div class="hscore-1">
+                        <span class="O-1 turn-O">O</span>
+                        <span class="O-2 turn-O">O</span>
+                        <span class="O-3 turn-O">O</span>
+                        <span class="O-4 turn-O">O</span>
+                    </div>
+                  <div class="hscore-2">
+                    <span class="O-5 _4x4 turn-O">O</span>
+                    <span class="O-6 _4x4 turn-O">O</span>
+                    <span class="O-7 _4x4 turn-O">O</span>
+                    <span class="O-8 _4x4 turn-O">O</span>
+                  </div>
+                </div>
+            </div>
+            <!-- <div class=" hplayer hplayer3 horizontal _4x4  player-T">
+                <div class="hname playerT-name">
+                    Player 3
+                </div>
+                <div class="hscore">
+                    <div class="hscore-1">
+                        <span class="T-1 turn-T">#</span>
+                        <span class="T-2 turn-T">#</span>
+                        <span class="T-3 turn-T">#</span>
+                        <span class="T-4 turn-T">#</span>
+                    </div>
+                  <div class="hscore-2">
+                    <span class="T-5 _4x4  turn-T">#</span>
+                    <span class="T-6 _4x4  turn-T">#</span>
+                    <span class="T-7 _4x4  turn-T">#</span>
+                    <span class="T-8 _4x4  turn-T">#</span>
+                  </div>
+                </div>
+            </div> -->
+    
+        </div>
+       
+
+
+
+
+
+
+
+
+
+
+<!-- Game details to play it in vertical on mobiles -->
+        <div class="game-details vertical-info">
+            <span class="game-heading" >
+                <h1 class="game-mode-heading">2P Game</h1>
+            </span>
+            <div class="vplayers-info ">
+                <div class=" vplayer vplayer1 player-X">
+                    <div class="vname playerX-name">
+                        Player 1
+                    </div>
+                    <div class="score">
+                        <div class="score-1">
+                            <span class="X-1 turn-X">X</span>
+                            <span class="X-2 turn-X">X</span>
+                            <span class="X-3 turn-X">X</span>
+                            <span class="X-4 turn-X">X</span>
+                        </div>
+                        <div class="score-2">
+                            <span class="X-5 turn-X _4x4 ">X</span>
+                            <span class="X-6 turn-X _4x4 ">X</span>
+                            <span class="X-7 turn-X _4x4 ">X</span>
+                            <span class="X-8 turn-X _4x4 ">X</span>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="vplayer vplayer2 player-O">
+                    <div class="vname playerO-name">
+                        Player 2
+                    </div>
+                    <div class="score">
+                        <div class="score-1">
+                            <span class="O-1 turn-O">O</span>
+                            <span class="O-2 turn-O">O</span>
+                            <span class="O-3 turn-O">O</span>
+                            <span class="O-4 turn-O">O</span>
+                        </div>
+                      <div class="score-2">
+                        <span class="O-5 turn-O _4x4 ">O</span>
+                        <span class="O-6 turn-O _4x4 ">O</span>
+                        <span class="O-7 turn-O _4x4 ">O</span>
+                        <span class="O-8 turn-O _4x4 ">O</span>
+                      </div>
+                      
+                    </div>
+                </div>
+                <!-- <div class=" vplayer vplayer3 _4x4 player-T ">
+                    <div class="vname playerT-name">
+                        Player 3
+                    </div>
+                    <div class="score">
+                        <div class="score-1">
+                            <span class="T-1 turn-T">#</span>
+                            <span class="T-2 turn-T">#</span>
+                            <span class="T-3 turn-T">#</span>
+                            <span class="T-4 turn-T">#</span>
+                        </div>
+                        <div class="score-2">
+                            <span class="T-5 turn-T _4x4 ">#</span>
+                            <span class="T-6 turn-T _4x4 ">#</span>
+                            <span class="T-7 turn-T _4x4 ">#</span>
+                            <span class="T-8 turn-T _4x4 ">#</span>
+                        </div>
+                       
+                    </div>
+                </div> -->
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+<div class="winner-box hidden">
+    <div class="wname">
+        <span class="winner-name">Umar </span>
+        <span>Wins</span>
+    </div>
+    <div class="winner-img">
+        <img class="winner-gif" src="asserts/images/excited.gif" alt="Nooo">
+
+    </div>
+  <div class="winner-new-game">
+  
+        <button class="new-game-btn winner-new-game-btn">New Game</button>
+    
+
+        <button class="again-game-btn winner-new-game-btn">Again Game</button>
+
+    
+
+  </div>
+
+</div>
+<div class="start-menu">
+    <h3>Select Mode</h3>
+    <div id="mode-boxes">
+        <div class="mode-box">3 X 3</div>
+        <div class="mode-box">4 X 4</div>
+    </div>
+</div>
+<div class="match-draw-box hidden">
+    <div class="match-draw-text">
+        Match has been Drawn
+    </div>
+    <div class="draw-new-game">
+        <button class="new-game-btn draw-new-btn">New Game</button>
+        <button class="again-game-btn draw-new-btn">Again Game</button>
+
+    
+      </div>
+</div>
+<div class="names-menu  hidden">
+    <div class="heading-player-names">
+        Enter player names
+    </div>
+    <div class="inputboxes">
+        <div class="input-1">
+            <label for="player1-input">Player 1</label>
+            <input class="name-input player1-input " type="text" name="player1"  placeholder="Player 1">
+    </div>
+      <div class="input-2">
+        <label for="player2-input">Player 2</label>
+        <input class="name-input player2-input" type="text" name="player2"  placeholder="Player 2">
+      </div>
+       
+
+    </div>
+<button class="add-players-btn">
+Add
+</button>
+</div>
+</html>
